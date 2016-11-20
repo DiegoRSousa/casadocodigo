@@ -11,12 +11,13 @@ public class ServletSpringMVC  extends AbstractAnnotationConfigDispatcherServlet
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[]{AppWebConfiguration.class};
+		return new Class[]{AppWebConfiguration.class, JPAConfiguration.class};
 	}
 
 	@Override
 	protected String[] getServletMappings() {
 		return new String[] {"/"};
 	}
+	
 
 }
